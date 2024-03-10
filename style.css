@@ -5,11 +5,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000; /* Set background color to pitch black */
+  background-image: url(./images/bw-logo.jpg); /* Set background color to pitch black */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 /* Custom styles for headings */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; /* Make headings bold */
@@ -17,7 +18,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px; /* Add padding to headings */
   font-family: Arial, sans-serif; /* Use Arial or fallback to sans-serif */
 }
-
 
 .loader {
   border: 16px solid #f3f3f3; /* Light grey */
@@ -189,41 +189,32 @@ body {
 
 #services {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Set background color to semi-transparent black */
+  padding: 20px;
+  border: 2px solid rgb(255, 254, 254);
+  /* Add black border around the box */
 }
 
-.service-box {
-  padding-top: 10px;
-  width: calc(50% - 10px);
-  background-color: #ffffff;
-  /* Set background color to white */
-  padding: 10px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  box-sizing: border-box;
-  border: 2px solid black;
-  /* Add black outline with medium thickness */
-  animation: float 4s ease-in-out infinite;
-  /* Add animation effect */
-}
 
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
+.website-Development-box {
+  background-color: #fff5f5;
+  /* Set background color to dark grey */
+  text-align: center;
+  padding: 1em;
+  animation: slideUp 1s ease-in-out;
+  color: #000000;
+  /* Add black border with medium thickness */
+}* Add black outline with medium thickness */
 
-  50% {
-    transform: translateY(-10px);
-  }
+.Application-Development-box {
+  background-color: #fff5f5;
+  /* Set background color to dark grey */
+  text-align: center;
+  padding: 1em;
+  animation: slideUp 1s ease-in-out;
+  color: #000000;
+  /* Add black border with medium thickness */
+} /* Add black outline with medium thickness */
 
-  100% {
-    transform: translateY(0);
-  }
-}
 
 .contact-box {
   background-color: #ffffff;
@@ -235,14 +226,12 @@ body {
 
 /* For small screens */
 @media screen and (max-width: 600px) {
-  .service-box {
+  .service-box ,.website-Development-box,.Application-Development-box{
     width: 100%; /* Make the width 100% for small screens */
     margin-bottom: 10px; /* Adjust margin */
   }
 
-  #services {
-    padding: 10px; /* Adjust padding */
-  }
+
 
   #design-ui .design-box,
   #design-ui .ui-box {
@@ -253,35 +242,29 @@ body {
 
 /* For medium screens */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  .service-box {
+  .service-box ,.website-Development-box,.Application-Development-box{
     width: 48%; /* Adjust width for medium screens */
     margin-right: 2%; /* Adjust margin */
     margin-bottom: 10px; /* Adjust margin */
   }
 
-  #services {
-    padding: 10px; /* Adjust padding */
-  }
 
   #design-ui .design-box,
   #design-ui .ui-box {
     width: 48%; /* Adjust width for medium screens */
     margin-right: 2%; /* Adjust margin */
-    margin-bottom: 5px; /* Adjust margin */
+    margin-bottom: 20px; /* Adjust margin */
   }
 }
 
 /* For large screens */
 @media screen and (min-width: 1025px) {
-  .service-box {
-    width: 30%; /* Adjust width for large screens */
+  .service-box ,.website-Development-box,.Application-Development-box{
+    width: 48%; /* Adjust width for large screens */
     margin-right: 2%; /* Adjust margin */
     margin-bottom: 20px; /* Adjust margin */
   }
 
-  #services {
-    padding: 10px; /* Adjust padding */
-  }
 
   #design-ui .design-box,
   #design-ui .ui-box {
@@ -289,36 +272,4 @@ body {
     margin-right: 2%; /* Adjust margin */
     margin-bottom: 20px; /* Adjust margin */
   }
-}
-
-/* Additional styles */
-body {
-  background-color: #fffdfd; /* Set background color to pitch black */
-}
-
-#design-ui {
-  background-color: #f5f5f5; /* Set background color to light grey */
-  padding: 20px;
-  border: 2px solid black; /* Add black border with medium thickness */
-}
-
-.design-box,
-.ui-box {
-  width: 50%; /* Set width to 50% */
-  padding: 20px; /* Add padding */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-}
-
-.design-box {
-  background-color: #f5f5f5; /* Set background color to light grey */
-  border-right: 2px solid black; /* Add black border on the right side */
-}
-
-.ui-box {
-  background-color: #f0f0f0; /* Set background color to grey */
-}
-
-.design-box h2,
-.ui-box h2 {
-  margin-top: 0; /* Remove top margin for heading */
 }
