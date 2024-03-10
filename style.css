@@ -112,24 +112,78 @@ main {
 
 .design-box,
 .ui-box {
-  background-color: #fff5f5;
+  background-color: #ffffff;
   /* Set background color to dark grey */
   text-align: center;
   padding: 1em;
   animation: slideUp 1s ease-in-out;
-  color: #000000;
+  color: #070404;
   /* Add black border with medium thickness */
 }
 
 /* Footer styles */
+
 footer {
-  background-color: #000000;
-  /* Set background color to dark grey */
-  text-align: center;
-  padding: 1em;
-  animation: slideUp 1s ease-in-out;
-  color: #fff;
-  /* Set font color to white */
+  background-color: #000000; /* Set background color for footer */
+  color: #ffffff; /* Set font color to white */
+  padding: 30px 0; /* Add padding to top and bottom */
+}
+
+.footer-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out columns evenly */
+  flex-wrap: wrap; /* Allow columns to wrap to next line if needed */
+}
+
+.footer-column {
+  flex: 1; /* Each column takes up equal width */
+  padding: 0 20px; /* Add padding around each column */
+}
+
+/* Style headings */
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px; /* Add some space below headings */
+}
+
+/* Style social links */
+.social-links {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block; /* Display social icons horizontally */
+  margin-right: 10px; /* Add space between social icons */
+}
+
+.social-links img {
+  width: 30px; /* Set width of social icons */
+  height: 30px; /* Set height of social icons */
+}
+
+/* Style service links */
+.service-links, .important-links {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.service-links li, .important-links li {
+  margin-bottom: 10px; /* Add space between each service link */
+}
+
+.service-links a, .important-links a {
+  color: #fff; /* Set link color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+.service-links a:hover, .important-links a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
 }
 
 /* Keyframes */
