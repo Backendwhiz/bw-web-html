@@ -197,13 +197,13 @@ body {
 
 .website-Development-box {
   background-color: #fff5f5;
-  /* Set background color to dark grey */
+
   text-align: center;
   padding: 1em;
   animation: slideUp 1s ease-in-out;
   color: #000000;
   /* Add black border with medium thickness */
-}* Add black outline with medium thickness */
+}
 
 .Application-Development-box {
   background-color: #fff5f5;
