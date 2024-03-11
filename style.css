@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(./images/bw-logo.jpg); /* Set background color to pitch black */
+  background-image: url(./images/bw-logo.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,15 +13,17 @@
 
 /* Custom styles for headings */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; /* Make headings bold */
-  text-decoration: underline; /* Underline headings */
-  padding: 5px; /* Add padding to headings */
-  font-family: Arial, sans-serif; /* Use Arial or fallback to sans-serif */
+  text-align: center;
+  font-size: 70px ;
+  font-weight: bold;
+  text-decoration-style: wavy;
+  padding: 5px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
 .loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #000000; /* Blue */
+  border: 16px solid #ffffff;
+  border-top: 16px solid #020202;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -43,31 +45,32 @@ body:not(.loaded) footer {
 
 /* Header styles */
 header {
-  background-color: #000000; /* Set background color to dark purple */
+  font-size: 50px;
+  background-color: #020101;
   padding: 1em;
   text-align: center;
-  animation: slideDown 1s ease-in-out;
-  color: #fff; /* Set font color to white */
+  animation: slideDown 2s ease-in-out;
+  color: #fff;
 }
 
 /* Navigation styles */
 nav {
-  background-color: #000000; /* Set background color to dark purple */
-  padding: 0.5em;
-  text-align: left;
+  background-color: #000000;
+  padding: 1em; /* Reduced padding */
+  text-align: center;
   display: flex;
-  align-items: lefty;
+  align-items: center;
   animation: slideFromLeft 1s ease-in-out;
 }
 
 .logo-box {
-  margin-right: 20px;
+  margin-right: 10px;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
 }
 
 .logo-box img {
-  width: 70px;
+  width: 100px;
 }
 
 .navigation {
@@ -79,22 +82,33 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  color: #fff; /* Set font color to white */
+  color: #fff;
 }
 
 .navigation li {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .navigation li:last-child {
-  margin-right: 0;
+  margin-right: 10;
 }
 
 .navigation li a {
   text-decoration: none;
-  font-size: 18px;
-  color: #fff; /* Set font color to white */
+  font-size: 25px; /* Reduced font size */
+  color: #fff;
 }
+.navigation .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* Adjust styling as needed */
+}
+
+.navigation li:hover .dropdown {
+  display: block;
+}
+
+
 
 /* Main styles */
 main {
@@ -102,88 +116,105 @@ main {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
 }
+/* Add these styles to center the images inside the service boxes */
+.website-Development-box ,
+ .seo-box{
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1em;
+  animation: slideUp 1s ease-in-out;
+  color: #070404;
+}
+.Application-Development-box{
+  padding: 500px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1em;
+  animation: slideUp 1s ease-in-out;
+  color: #000000;
+}
+
+/* Add these styles to center the images inside the service boxes */
+
 
 #design-ui {
   display: flex;
   padding: 20px;
   border: 2px solid rgb(255, 254, 254);
-  /* Add black border around the box */
 }
 
 .design-box,
 .ui-box {
   background-color: #ffffff;
-  /* Set background color to dark grey */
   text-align: center;
   padding: 1em;
   animation: slideUp 1s ease-in-out;
   color: #070404;
-  /* Add black border with medium thickness */
 }
 
 /* Footer styles */
-
 footer {
-  background-color: #000000; /* Set background color for footer */
-  color: #ffffff; /* Set font color to white */
-  padding: 30px 0; /* Add padding to top and bottom */
+  background-color: black;
+  color: #ffffff;
+  padding: 35px 0;
 }
 
 .footer-container {
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Space out columns evenly */
-  flex-wrap: wrap; /* Allow columns to wrap to next line if needed */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-column {
-  flex: 1; /* Each column takes up equal width */
-  padding: 0 20px; /* Add padding around each column */
+  flex: 1;
+  padding: 0 20px;
 }
 
-/* Style headings */
 .footer-column h3 {
-  font-size: 18px;
+  font-size: 35px;
   font-weight: bold;
-  margin-bottom: 15px; /* Add some space below headings */
+  margin-bottom: 15px;
 }
 
-/* Style social links */
 .social-links {
-  list-style-type: none; /* Remove bullet points */
+  list-style-type: none;
+  size: 50px;
   padding: 0;
   margin: 0;
 }
 
 .social-links li {
-  display: inline-block; /* Display social icons horizontally */
-  margin-right: 10px; /* Add space between social icons */
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .social-links img {
-  width: 30px; /* Set width of social icons */
-  height: 30px; /* Set height of social icons */
+  width: 74px;
+  height: 65px;
 }
 
-/* Style service links */
-.service-links, .important-links {
-  list-style-type: none; /* Remove bullet points */
+.service-links,
+.important-links {
+  list-style-type: none;
+  font-size: 30px;
   padding: 0;
   margin: 0;
 }
 
-.service-links li, .important-links li {
-  margin-bottom: 10px; /* Add space between each service link */
+.service-links li,
+.important-links li {
+  margin-bottom: 10px;
 }
 
-.service-links a, .important-links a {
-  color: #fff; /* Set link color to white */
-  text-decoration: none; /* Remove underline */
+.service-links a,
+.important-links a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.service-links a:hover, .important-links a:hover {
-  text-decoration: underline; /* Add underline on hover */
-}
-
+.service-links a:hover,
+.important-links a:hover {
+  text-decoration: underline;
 }
 
 /* Keyframes */
@@ -191,7 +222,6 @@ footer {
   from {
     transform: translateY(-100%);
   }
-
   to {
     transform: translateY(0);
   }
@@ -201,7 +231,6 @@ footer {
   from {
     transform: translateX(-100%);
   }
-
   to {
     transform: translateX(0);
   }
@@ -211,7 +240,6 @@ footer {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -221,7 +249,6 @@ footer {
   from {
     transform: translateY(100%);
   }
-
   to {
     transform: translateY(0);
   }
@@ -230,100 +257,71 @@ footer {
 /* Additional styles */
 body {
   background-color: #fffdfd;
-  /* Set background color to pitch black */
+  background-image: url; /* Removed URL */
+  background-position: center;
+  box-sizing: border-box;
 }
 
 #home {
   background-color: #ffffff;
-  /* Set background color to white */
   padding: 20px;
   border: 2px solid black;
-  /* Add black outline with medium thickness */
 }
 
 #services {
-  display: flex;
-  padding: 20px;
-  border: 2px solid rgb(255, 254, 254);
-  /* Add black border around the box */
+  position: relative;
+  overflow: hidden;
 }
 
-
-.website-Development-box {
+.service-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #fff5f5;
-
   text-align: center;
   padding: 1em;
-  animation: slideUp 1s ease-in-out;
-  color: #000000;
-  /* Add black border with medium thickness */
+  color: #ffdddd;
+  animation: fadeInOut 6s ease-in-out infinite;
 }
 
-.Application-Development-box {
-  background-color: #fff5f5;
-  /* Set background color to dark grey */
-  text-align: center;
-  padding: 1em;
-  animation: slideUp 1s ease-in-out;
-  color: #000000;
-  /* Add black border with medium thickness */
-} /* Add black outline with medium thickness */
-
-
-.contact-box {
-  background-color: #ffffff;
-  /* Set background color to white */
-  padding: 20px;
-  border-radius: 8px;
-  border: 2px solid black;
+.service-box:last-child {
+  animation-delay: 3s;
+  opacity: 0;
+}
+.services img {
+  max-width: 100%;
+  height: auto;
+  margin: auto; /* Center the image horizontally */
 }
 
-/* For small screens */
-@media screen and (max-width: 600px) {
-  .service-box ,.website-Development-box,.Application-Development-box{
-    width: 100%; /* Make the width 100% for small screens */
-    margin-bottom: 10px; /* Adjust margin */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
   }
-
-
-
-  #design-ui .design-box,
-  #design-ui .ui-box {
-    width: 100%; /* Make the width 100% for small screens */
-    margin-bottom: 10px; /* Adjust margin */
+  50% {
+    opacity: 1;
   }
 }
 
-/* For medium screens */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .service-box ,.website-Development-box,.Application-Development-box{
-    width: 48%; /* Adjust width for medium screens */
-    margin-right: 2%; /* Adjust margin */
-    margin-bottom: 10px; /* Adjust margin */
-  }
-
-
-  #design-ui .design-box,
-  #design-ui .ui-box {
-    width: 48%; /* Adjust width for medium screens */
-    margin-right: 2%; /* Adjust margin */
-    margin-bottom: 20px; /* Adjust margin */
-  }
+p {
+  font-size: 25px; /* Adjust the font size as needed */
 }
-
-/* For large screens */
-@media screen and (min-width: 1025px) {
-  .service-box ,.website-Development-box,.Application-Development-box{
-    width: 48%; /* Adjust width for large screens */
-    margin-right: 2%; /* Adjust margin */
-    margin-bottom: 20px; /* Adjust margin */
+/* Add these styles to center the images inside the service boxes on larger screens */
+/* Add these styles to center the images inside the service boxes on larger screens */
+@media screen and (min-width: 768px) {
+  .services img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Align text center */
+    position: relative; /* Change position to relative */
   }
-
-
-  #design-ui .design-box,
-  #design-ui .ui-box {
-    width: 48%; /* Adjust width for large screens */
-    margin-right: 2%; /* Adjust margin */
-    margin-bottom: 20px; /* Adjust margin */
+  
+  .service img {
+    max-width: 100%;
+    height: auto;
+    margin: auto; /* Center the image horizontally */
   }
 }
