@@ -287,47 +287,45 @@ body {
   height: auto;
   margin: auto; /* Center the image horizontally */
 }
-
-/* Add these styles to center the images inside the service boxes on larger screens */
-@media screen and (min-width: 768px) {
-  .services img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Align text center */
-    position: relative; /* Change position to relative */
-  }
-  
-  .service img {
-    max-width: 100%;
-    height: auto;
-    margin: auto; /* Center the image horizontally */
-  }
-}
-
-/* Media query for smaller screens */
+/* Adjustments for smaller screens */
 @media only screen and (max-width: 768px) {
   body {
-    font-size: 14px;
-    /* Adjust other styles for smaller screens */
+    font-size: 14px; /* Adjusted font size for smaller screens */
+    /* Add other adjustments for smaller screens as needed */
   }
 
-  /* Adjustments for footer padding */
+  /* Adjustments for footer */
   footer {
-    padding: 15px;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-column {
-    max-width: 100%;
+    padding: 20px 0; /* Increased padding for better spacing */
   }
 
   .footer-column h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 18px; /* Increased font size for better readability */
+    margin-bottom: 15px; /* Adjusted margin for better spacing */
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 25px; /* Increased font size for larger screens */
+    line-height: 1.6; /* Adjusted line height for better readability */
+    /* Add other adjustments for larger screens as needed */
+  }
+
+  /* Adjustments for footer on larger screens */
+  footer {
+    padding: 30px 0; /* Increased padding for better spacing on larger screens */
+  }
+
+  .footer-column h3 {
+    font-size: 30px; /* Increased font size for footer on larger screens */
+    margin-bottom: 20px; /* Adjusted margin for better spacing on larger screens */
+
+  }
+  .social-links , .important-links , .service-links{
+    font-size: 25px; /* Increased font size for footer on larger screens */
+    margin-bottom: 20px; /* Adjusted margin for better spacing on larger screens */
+
   }
 }
