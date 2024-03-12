@@ -14,7 +14,7 @@
 /* Custom styles for headings */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px; /* Smaller font size */
   font-weight: bold;
   text-decoration-style: wavy;
   padding: 5px;
@@ -45,7 +45,7 @@ body:not(.loaded) footer {
 
 /* Header styles */
 header {
-  font-size: 50px;
+  font-size: 40px; /* Smaller font size */
   background-color: #020101;
   padding: 1em;
   text-align: center;
@@ -96,9 +96,10 @@ nav {
 
 .navigation li a {
   text-decoration: none;
-  font-size: 25px; /* Reduced font size */
+  font-size: 20px; /* Smaller font size */
   color: #fff;
 }
+
 .navigation .dropdown {
   display: none;
   position: absolute;
@@ -133,7 +134,8 @@ main {
   animation: slideUp 1s ease-in-out;
   color: #000000; /* Changed text color to black */
 }
-#design-ui{
+
+#design-ui {
   background-color: #ffffff;
   text-align: center;
   padding: 1em;
@@ -145,28 +147,29 @@ main {
 footer {
   background-color: black;
   color: #ffffff;
-  padding: 25px 0; /* Adjusted padding */
+  padding: 25px 0; /* Slightly bigger padding */
+  text-align: center;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-column {
   flex: 1;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .footer-column h3 {
-  font-size: 20px; /* Adjusted font size */
+  font-size: 18px; /* Slightly bigger font size */
   font-weight: bold;
   margin-bottom: 15px;
 }
 
 .social-links {
-  list-style-type: none;
+  list-style-type: square;
   padding: 0;
   margin: 0;
 }
@@ -177,14 +180,14 @@ footer {
 }
 
 .social-links img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 .service-links,
 .important-links {
   list-style-type: none;
-  font-size: 25px;
+  font-size: 15px;
   padding: 0;
   margin: 0;
 }
@@ -301,18 +304,30 @@ body {
     margin: auto; /* Center the image horizontally */
   }
 }
-/* Media query for smaller screens (e.g., mobile devices) */
+
+/* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
   body {
-      font-size: 14px;
-      /* Adjust other styles for smaller screens */
+    font-size: 14px;
+    /* Adjust other styles for smaller screens */
   }
 
-  /* Adjustments for images on smaller screens */
-  img {
-      max-width: 100%;
-      height: auto;
-      /* Other adjustments as needed */    
+  /* Adjustments for footer padding */
+  footer {
+    padding: 15px;
   }
 
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    max-width: 100%;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
