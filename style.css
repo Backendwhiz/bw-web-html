@@ -14,7 +14,7 @@
 /* Custom styles for headings */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bold;
   text-decoration-style: wavy;
   padding: 5px;
@@ -133,12 +133,19 @@ main {
   animation: slideUp 1s ease-in-out;
   color: #000000; /* Changed text color to black */
 }
+#design-ui{
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1em;
+  animation: slideUp 2s ease-in-out;
+  color: #070404;
+}
 
 /* Footer styles */
 footer {
   background-color: black;
   color: #ffffff;
-  padding: 35px 0; /* Adjusted padding */
+  padding: 25px 0; /* Adjusted padding */
 }
 
 .footer-container {
@@ -153,7 +160,7 @@ footer {
 }
 
 .footer-column h3 {
-  font-size: 35px; /* Adjusted font size */
+  font-size: 20px; /* Adjusted font size */
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -170,14 +177,14 @@ footer {
 }
 
 .social-links img {
-  width: 74px;
-  height: 65px;
+  width: 25px;
+  height: 25px;
 }
 
 .service-links,
 .important-links {
   list-style-type: none;
-  font-size: 30px;
+  font-size: 25px;
   padding: 0;
   margin: 0;
 }
@@ -307,8 +314,5 @@ body {
       height: auto;
       /* Other adjustments as needed */    
   }
-  h1, h2, h3, h4, h5, h6{
-    max-width: 100%;
-    height: auto;
-  }
+
 }
