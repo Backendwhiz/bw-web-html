@@ -14,7 +14,7 @@
 /* Custom styles for headings */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  font-size: 70px ;
+  font-size: 70px;
   font-weight: bold;
   text-decoration-style: wavy;
   padding: 5px;
@@ -60,6 +60,7 @@ nav {
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center; /* Center the navigation items */
   animation: slideFromLeft 1s ease-in-out;
 }
 
@@ -90,7 +91,7 @@ nav {
 }
 
 .navigation li:last-child {
-  margin-right: 10;
+  margin-right: 10px; /* Fixed missing unit (e.g., px) */
 }
 
 .navigation li a {
@@ -108,55 +109,36 @@ nav {
   display: block;
 }
 
-
-
 /* Main styles */
 main {
   padding: 1em;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
 }
+
 /* Add these styles to center the images inside the service boxes */
-.website-Development-box ,
- .seo-box{
+.website-Development-box,
+.seo-box {
   background-color: #ffffff;
   text-align: center;
   padding: 1em;
   animation: slideUp 1s ease-in-out;
   color: #070404;
 }
-.Application-Development-box{
-  padding: 500px;
+
+.Application-Development-box {
+  padding: 1em; /* Adjusted padding */
   background-color: #ffffff;
   text-align: center;
-  padding: 1em;
   animation: slideUp 1s ease-in-out;
-  color: #000000;
-}
-
-/* Add these styles to center the images inside the service boxes */
-
-
-#design-ui {
-  display: flex;
-  padding: 20px;
-  border: 2px solid rgb(255, 254, 254);
-}
-
-.design-box,
-.ui-box {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 1em;
-  animation: slideUp 1s ease-in-out;
-  color: #070404;
+  color: #000000; /* Changed text color to black */
 }
 
 /* Footer styles */
 footer {
   background-color: black;
   color: #ffffff;
-  padding: 35px 0;
+  padding: 35px 0; /* Adjusted padding */
 }
 
 .footer-container {
@@ -171,14 +153,13 @@ footer {
 }
 
 .footer-column h3 {
-  font-size: 35px;
+  font-size: 35px; /* Adjusted font size */
   font-weight: bold;
   margin-bottom: 15px;
 }
 
 .social-links {
   list-style-type: none;
-  size: 50px;
   padding: 0;
   margin: 0;
 }
@@ -290,25 +271,13 @@ body {
   animation-delay: 3s;
   opacity: 0;
 }
+
 .services img {
   max-width: 100%;
   height: auto;
   margin: auto; /* Center the image horizontally */
 }
 
-@keyframes fadeInOut {
-  0%, 100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-p {
-  font-size: 25px; /* Adjust the font size as needed */
-}
-/* Add these styles to center the images inside the service boxes on larger screens */
 /* Add these styles to center the images inside the service boxes on larger screens */
 @media screen and (min-width: 768px) {
   .services img {
@@ -323,5 +292,19 @@ p {
     max-width: 100%;
     height: auto;
     margin: auto; /* Center the image horizontally */
+  }
+}
+/* Media query for smaller screens (e.g., mobile devices) */
+@media only screen and (max-width: 768px) {
+  body {
+      font-size: 14px;
+      /* Adjust other styles for smaller screens */
+  }
+
+  /* Adjustments for images on smaller screens */
+  img {
+      max-width: 100%;
+      height: auto;
+      /* Other adjustments as needed */
   }
 }
