@@ -303,6 +303,31 @@ body {
     font-size: 18px; /* Increased font size for better readability */
     margin-bottom: 15px; /* Adjusted margin for better spacing */
   }
+
+  /* Adjustments for images on smaller screens */
+  img {
+    max-width: 100%; /* Ensure images resize appropriately */
+    height: auto;
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px; /* Increased font size for larger screens */
+    line-height: 1.6; /* Adjusted line height for better readability */
+    /* Add other adjustments for larger screens as needed */
+  }
+
+  /* Adjustments for footer on larger screens */
+  footer {
+    padding: 30px 0; /* Increased padding for better spacing on larger screens */
+  }
+
+  .footer-column h3 {
+    font-size: 20px; /* Increased font size for footer on larger screens */
+    margin-bottom: 20px; /* Adjusted margin for better spacing on larger screens */
+  }
 }
 
 /* Media query for larger screens */
