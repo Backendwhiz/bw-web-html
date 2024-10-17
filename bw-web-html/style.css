@@ -1,0 +1,392 @@
+/* Preloader styles */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/bw-logo.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Custom styles for headings */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-size: 40px; /* Smaller font size */
+  font-weight: bold;
+  text-decoration-style: wavy;
+  padding: 5px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.loader {
+  border: 16px solid #ffffff;
+  border-top: 16px solid #020202;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hide content initially */
+body:not(.loaded) header,
+body:not(.loaded) nav,
+body:not(.loaded) main,
+body:not(.loaded) footer {
+  display: none;
+}
+
+/* Header styles */
+header {
+  font-size: 40px; /* Smaller font size */
+  background-color: #020101;
+  padding: 1em;
+  text-align: center;
+  animation: slideDown 2s ease-in-out;
+  color: #fff;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #000000;
+  padding: 1em; /* Reduced padding */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the navigation items */
+  animation: slideFromLeft 1s ease-in-out;
+}
+
+.logo-box {
+  margin-right: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.logo-box img {
+  width: 100px;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.navigation li {
+  margin-right: 10px;
+}
+
+.navigation li:last-child {
+  margin-right: 10px; /* Fixed missing unit (e.g., px) */
+}
+
+.navigation li a {
+  text-decoration: none;
+  font-size: 20px; /* Smaller font size */
+  color: #fff;
+}
+
+.navigation .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* Adjust styling as needed */
+}
+
+.navigation li:hover .dropdown {
+  display: block;
+}
+
+/* Main styles */
+main {
+  padding: 1em;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Add these styles to center the images inside the service boxes */
+.website-Development-box,
+.seo-box {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1em;
+  animation: slideUp 1s ease-in-out;
+  color: #070404;
+}
+
+.Application-Development-box {
+  padding: 1em; /* Adjusted padding */
+  background-color: #ffffff;
+  text-align: center;
+  animation: slideUp 1s ease-in-out;
+  color: #000000; /* Changed text color to black */
+}
+
+#design-ui {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1em;
+  animation: slideUp 2s ease-in-out;
+  color: #070404;
+}
+
+/* Footer styles */
+footer {
+  background-color: black;
+  color: #ffffff;
+  padding: 25px 0; /* Slightly bigger padding */
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.footer-column h3 {
+  font-size: 18px; /* Slightly bigger font size */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  list-style-type: square;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.service-links,
+.important-links {
+  list-style-type: none;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.service-links li,
+.important-links li {
+  margin-bottom: 10px;
+}
+
+.service-links a,
+.important-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.service-links a:hover,
+.important-links a:hover {
+  text-decoration: underline;
+}
+
+/* Keyframes */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Additional styles */
+body {
+  background-color: #fffdfd;
+  background-image: url; /* Removed URL */
+  background-position: center;
+  box-sizing: border-box;
+}
+
+#home {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+#services {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-box {
+  padding-top: 10px;
+  width: calc(50% - 10px);
+  background-color: #ffffff;
+  /* Set background color to white */
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  /* Add black outline with medium thickness */
+  animation: float 4s ease-in-out infinite;
+  /* Add animation effect */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.contact-box {
+  background-color: #ffffff;
+  /* Set background color to white */
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+/* For small screens */
+@media screen and (max-width: 600px) {
+  .service-box {
+    width: 100%; /* Make the width 100% for small screens */
+    margin-bottom: 10px; /* Adjust margin */
+  }
+
+  #services {
+    padding: 10px; /* Adjust padding */
+  }
+
+  #design-ui .design-box,
+  #design-ui .ui-box {
+    width: 100%; /* Make the width 100% for small screens */
+    margin-bottom: 10px; /* Adjust margin */
+  }
+}
+
+/* For medium screens */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .service-box {
+    width: 48%; /* Adjust width for medium screens */
+    margin-right: 2%; /* Adjust margin */
+    margin-bottom: 10px; /* Adjust margin */
+  }
+
+  #services {
+    padding: 10px; /* Adjust padding */
+  }
+
+  #design-ui .design-box,
+  #design-ui .ui-box {
+    width: 48%; /* Adjust width for medium screens */
+    margin-right: 2%; /* Adjust margin */
+    margin-bottom: 5px; /* Adjust margin */
+  }
+}
+
+/* For large screens */
+@media screen and (min-width: 1025px) {
+  .service-box {
+    width: 30%; /* Adjust width for large screens */
+    margin-right: 2%; /* Adjust margin */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  #services {
+    padding: 10px; /* Adjust padding */
+  }
+
+  #design-ui .design-box,
+  #design-ui .ui-box {
+    width: 48%; /* Adjust width for large screens */
+    margin-right: 2%; /* Adjust margin */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+}
+
+/* Additional styles */
+body {
+  background-color: #fffdfd; /* Set background color to pitch black */
+}
+
+#design-ui {
+  background-color: #f5f5f5; /* Set background color to light grey */
+  padding: 20px;
+  border: 2px solid black; /* Add black border with medium thickness */
+}
+
+.design-box,
+.ui-box {
+  width: 50%; /* Set width to 50% */
+  padding: 20px; /* Add padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.design-box {
+  background-color: #f5f5f5; /* Set background color to light grey */
+  border-right: 2px solid black; /* Add black border on the right side */
+}
+
+.ui-box {
+  background-color: #f0f0f0; /* Set background color to grey */
+}
+
+.design-box h2,
+.ui-box h2 {
+  margin-top: 0; /* Remove top margin for heading */
+}

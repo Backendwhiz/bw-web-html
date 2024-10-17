@@ -1,0 +1,60 @@
+
+/* Content page styles */
+
+/* Centering company name at the top */
+.company-name {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Centering headings */
+  .content-heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  
+  /* Styles for main content */
+  .content {
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  /* Styles for paragraphs */
+  .content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for links */
+  .content a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media only screen and (max-width: 768px) {
+    /* Adjustments for company name */
+    .company-name {
+      font-size: 30px;
+    }
+  
+    /* Adjustments for headings */
+    .content-heading {
+      font-size: 30px;
+    }
+  
+    /* Adjustments for paragraphs */
+    .content p {
+      font-size: 16px;
+    }
+  }
+  
