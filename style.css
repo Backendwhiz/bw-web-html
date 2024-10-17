@@ -265,92 +265,128 @@ body {
 }
 
 .service-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff5f5;
-  text-align: center;
-  padding: 1em;
-  color: #ffdddd;
-  animation: fadeInOut 6s ease-in-out infinite;
+  padding-top: 10px;
+  width: calc(50% - 10px);
+  background-color: #ffffff;
+  /* Set background color to white */
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  /* Add black outline with medium thickness */
+  animation: float 4s ease-in-out infinite;
+  /* Add animation effect */
 }
 
-.service-box:last-child {
-  animation-delay: 3s;
-  opacity: 0;
-}
-
-.services img {
-  max-width: 100%;
-  height: auto;
-  margin: auto; /* Center the image horizontally */
-}
-/* Adjustments for smaller screens */
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: 14px; /* Adjusted font size for smaller screens */
-    /* Add other adjustments for smaller screens as needed */
+@keyframes float {
+  0% {
+    transform: translateY(0);
   }
 
-  /* Adjustments for footer */
-  footer {
-    padding: 20px 0; /* Increased padding for better spacing */
+  50% {
+    transform: translateY(-10px);
   }
 
-  .footer-column h3 {
-    font-size: 18px; /* Increased font size for better readability */
-    margin-bottom: 15px; /* Adjusted margin for better spacing */
-  }
-
-  /* Adjustments for images on smaller screens */
-  img {
-    max-width: 100%; /* Ensure images resize appropriately */
-    height: auto;
+  100% {
+    transform: translateY(0);
   }
 }
 
-/* Media query for larger screens */
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 16px; /* Increased font size for larger screens */
-    line-height: 1.6; /* Adjusted line height for better readability */
-    /* Add other adjustments for larger screens as needed */
+.contact-box {
+  background-color: #ffffff;
+  /* Set background color to white */
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+/* For small screens */
+@media screen and (max-width: 600px) {
+  .service-box {
+    width: 100%; /* Make the width 100% for small screens */
+    margin-bottom: 10px; /* Adjust margin */
   }
 
-  /* Adjustments for footer on larger screens */
-  footer {
-    padding: 30px 0; /* Increased padding for better spacing on larger screens */
+  #services {
+    padding: 10px; /* Adjust padding */
   }
 
-  .footer-column h3 {
-    font-size: 20px; /* Increased font size for footer on larger screens */
-    margin-bottom: 20px; /* Adjusted margin for better spacing on larger screens */
+  #design-ui .design-box,
+  #design-ui .ui-box {
+    width: 100%; /* Make the width 100% for small screens */
+    margin-bottom: 10px; /* Adjust margin */
   }
 }
 
-/* Media query for larger screens */
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 25px; /* Increased font size for larger screens */
-    line-height: 1.6; /* Adjusted line height for better readability */
-    /* Add other adjustments for larger screens as needed */
+/* For medium screens */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .service-box {
+    width: 48%; /* Adjust width for medium screens */
+    margin-right: 2%; /* Adjust margin */
+    margin-bottom: 10px; /* Adjust margin */
   }
 
-  /* Adjustments for footer on larger screens */
-  footer {
-    padding: 30px 0; /* Increased padding for better spacing on larger screens */
+  #services {
+    padding: 10px; /* Adjust padding */
   }
 
-  .footer-column h3 {
-    font-size: 30px; /* Increased font size for footer on larger screens */
-    margin-bottom: 20px; /* Adjusted margin for better spacing on larger screens */
-
+  #design-ui .design-box,
+  #design-ui .ui-box {
+    width: 48%; /* Adjust width for medium screens */
+    margin-right: 2%; /* Adjust margin */
+    margin-bottom: 5px; /* Adjust margin */
   }
-  .social-links , .important-links , .service-links{
-    font-size: 25px; /* Increased font size for footer on larger screens */
-    margin-bottom: 20px; /* Adjusted margin for better spacing on larger screens */
+}
 
+/* For large screens */
+@media screen and (min-width: 1025px) {
+  .service-box {
+    width: 30%; /* Adjust width for large screens */
+    margin-right: 2%; /* Adjust margin */
+    margin-bottom: 20px; /* Adjust margin */
   }
+
+  #services {
+    padding: 10px; /* Adjust padding */
+  }
+
+  #design-ui .design-box,
+  #design-ui .ui-box {
+    width: 48%; /* Adjust width for large screens */
+    margin-right: 2%; /* Adjust margin */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+}
+
+/* Additional styles */
+body {
+  background-color: #fffdfd; /* Set background color to pitch black */
+}
+
+#design-ui {
+  background-color: #f5f5f5; /* Set background color to light grey */
+  padding: 20px;
+  border: 2px solid black; /* Add black border with medium thickness */
+}
+
+.design-box,
+.ui-box {
+  width: 50%; /* Set width to 50% */
+  padding: 20px; /* Add padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.design-box {
+  background-color: #f5f5f5; /* Set background color to light grey */
+  border-right: 2px solid black; /* Add black border on the right side */
+}
+
+.ui-box {
+  background-color: #f0f0f0; /* Set background color to grey */
+}
+
+.design-box h2,
+.ui-box h2 {
+  margin-top: 0; /* Remove top margin for heading */
 }
